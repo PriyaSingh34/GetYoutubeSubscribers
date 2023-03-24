@@ -1,6 +1,7 @@
 const express = require('express')
 const app = require('./app.js')
 const mongoose = require('mongoose')
+const bodyParser = require("body-parser");
 const port = 4000
 
 // Parse JSON bodies (as sent by API clients)
