@@ -17,4 +17,4 @@ const susbcriberSchema = new mongoose.Schema({
 })
 
 //Subscriber is the collection name here
-module.exports = mongoose.model('Subscriber',susbcriberSchema);
+module.exports = mongoose.model('subscriber',susbcriberSchema);
