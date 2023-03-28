@@ -17,3 +17,4 @@ db.once('open', () => console.log('connected to database'))
 
 // Start Server
 module.exports = app.listen(port, () => console.log(`Server is working, App listening on port ${port}!`))
+// app.listen(PORT); use app.listen(process.env.PORT);
