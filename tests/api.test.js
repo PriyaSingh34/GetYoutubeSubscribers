@@ -3,7 +3,7 @@ var assert = chai.assert;
 var should = chai.should();
 var expect = chai.expect;
 const { describe} = require("mocha");
-var server = require("../src/index");
+var server = require("../index");
 let chaiHttp = require("chai-http");
 chai.use(chaiHttp);
 
@@ -50,7 +50,7 @@ describe("API", () => {
   //can get subscribers through their ids
   describe("GET /subscribers/:id", () => {
     it("returns subscribers information through their ids", (done) => {
-      const id = "641ea39834968e893d4cbc4f";
+      const id = "642319b9205674f2610da968";
       chai
         .request(server)
         .get("/subscribers/" + id)
